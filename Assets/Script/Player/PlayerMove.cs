@@ -45,11 +45,12 @@ public class PlayerMove : MonoBehaviour
 
     }
 
+    Vector3 dir;
     public void SetRotation(Vector3 target)
     {
-        Vector3 dir = target - transform.position;
+        dir = target - transform.position;
         dir.y = 0;
-        transform.rotation = Quaternion.LookRotation(dir);
+        transform.rotation = Quaternion.LookRotation(dir.normalized);
     }
 
     public void StopImmediately()

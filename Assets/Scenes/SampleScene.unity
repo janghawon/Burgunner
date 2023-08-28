@@ -304,8 +304,8 @@ MonoBehaviour:
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.3
-  m_SoftZoneHeight: 0.8
+  m_SoftZoneWidth: 0.88
+  m_SoftZoneHeight: 0.9
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -320,12 +320,30 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
+--- !u!1 &326892373 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2791896387089715046, guid: 2ad1c95b14128b24088559dc3ec3e88c,
+    type: 3}
+  m_PrefabInstance: {fileID: 83507022}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &326892374 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 353108084006778273, guid: 2ad1c95b14128b24088559dc3ec3e88c,
     type: 3}
   m_PrefabInstance: {fileID: 83507022}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &326892376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326892373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1779bda19f21aba4d8a3cfe7705a02e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0

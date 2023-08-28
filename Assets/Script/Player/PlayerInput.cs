@@ -18,9 +18,6 @@ public class PlayerInput : MonoBehaviour
     private void PlayerMove()
     {
         dir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        if (dir.sqrMagnitude != 0)
-            _playerMoveInput?.Invoke(dir);
-        else
-            _playerMoveStopInput?.Invoke();
+        _playerMoveInput?.Invoke(dir);
     }
 }
