@@ -1,0 +1,104 @@
+{
+    "name": "Controlls",
+    "maps": [
+        {
+            "name": "ActionMap",
+            "id": "6241a9f7-9df5-4092-8b35-7559bfd2ed4a",
+            "actions": [
+                {
+                    "name": "Player",
+                    "type": "Value",
+                    "id": "02548910-147b-4885-a11c-c097c7f3c591",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Aim",
+                    "type": "Value",
+                    "id": "544dc366-4fb2-4063-bafc-8ca8657b2be4",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "WASD",
+                    "id": "ff78a020-64d6-41b6-ae46-814992547620",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Player",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "55144717-d13e-48ae-9bad-d516d4a89b7a",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyInput",
+                    "action": "Player",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "3dfa1a32-1292-4dc9-87c5-7eb4598eed17",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyInput",
+                    "action": "Player",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "e9b9c820-bfd4-4776-b14a-ccba9b361e0e",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyInput",
+                    "action": "Player",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "0f8cef1c-0601-4d2e-9afe-d1d60ca10d4f",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyInput",
+                    "action": "Player",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "f61ca881-dbaa-4d81-ad83-a1b1712263db",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyInput",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "KeyInput",
+            "bindingGroup": "KeyInput",
+            "devices": []
+        }
+    ]
+}
