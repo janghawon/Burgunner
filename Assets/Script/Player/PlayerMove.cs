@@ -6,8 +6,10 @@ public class PlayerMove : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _gravity = -9.8f;
+    [SerializeField] private float _rotationSpeed = 20;
 
     private CharacterController _charController;
+    private GameObject _visual;
     private PlayerAnimator _agentAnimator;
 
     private Vector3 _movementVelocity;
@@ -20,7 +22,8 @@ public class PlayerMove : MonoBehaviour
     private void Awake()
     {
         _charController = GetComponent<CharacterController>();
-        _agentAnimator = transform.Find("Visual").GetComponent<PlayerAnimator>();
+        _visual = transform.Find("Visual").gameObject;
+        _agentAnimator = _visual.GetComponent<PlayerAnimator>();
     }
 
     public void SetMovementVelocity(Vector3 value)
@@ -48,9 +51,12 @@ public class PlayerMove : MonoBehaviour
     Vector3 dir;
     public void SetRotation(Vector3 target)
     {
+        
         dir = target - transform.position;
         dir.y = 0;
-        transform.rotation = Quaternion.LookRotation(dir.normalized);
+        _visual.transform.rotation = Quaternion.Lerp(_visual.transform.rotation,
+                                                     Quaternion.LookRotation(dir.normalized),
+                                                     _rotationSpeed * Time.deltaTime);
     }
 
     public void StopImmediately()
